@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>IAVMS</title>
+  <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="js/bootstrap.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="font-awesome-4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="homePage.css">
+
+    
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+
+  <!-- animate.css -->
+  <link rel="stylesheet" href="assets/animate/animate.css" />
+  <link rel="stylesheet" href="assets/animate/set.css" />
+
+  <!-- gallery -->
+  <link rel="stylesheet" href="assets/gallery/blueimp-gallery.min.css">
+  <!-- Carosel start-->
+  <script type="text/javascript">
+              $(document).ready(function(){
+              $('a[href^="#"]').on('click',function (e) {
+               e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+              $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+                 }, 900, 'swing', function () {
+                  window.location.hash = target;
+                });
+               });
+            });
+  </script>
+
+
+  
+
+</head>
+<body>
+  <div>
+    <img src='images/upperFlag.jpg' alt="Image of indian flag" id="upperFlag">
+  </div>  
+  <div class="row">
+    <div class="col-md-2">
+      
+    </div>
+    <div class="col-md-8">
+      <img src="images/mainPageLogo.jpg" id="mainPageLogo">
+    </div>
+    <div class="col-md-2">    
+      
+    </div>
+  </div>
+    
+
+  </div>
+  <div>
+  <!--navbar-->
+  
+  
+    <nav class="navbar navbar-default navbar-inverse" id="mainNavigation">
+    <div class="container">
+      <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#list-elements">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+
+      <div class="navbar-collapse collapse" id="list-elements">
+        <ul class="nav navbar-nav" id="navUlElements">
+
+          <li class="active"><a href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+          <li> <a href="regiments.html"><i class="fa fa-users" aria-hidden="true"></i>&nbsp;Regiments</a></li>
+                
+          <li>
+            <a href="gallery.html"><i class="fa fa-file-image-o" aria-hidden="true"></i>&nbsp;Gallery</a>
+          </li>
+          <li><a href="index.html"><i class="fa fa-info-circle" aria-hidden="true"></i>&nbsp;About</a></li>
+          
+          <li>
+            <span style="margin-left: 420px;"></span><button class="button" style="vertical-align:middle;"><a href="login.html"><span  id="spanLogIn">Log In </span></a></button>
+          </li>
+        </ul>
+      </div>
+
+    </div>    
+    </nav>
+
+
+
+  <!--navbar end-->
+  </div>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+#myInput {
+  background-image: url('images/search-icon.png'); 
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  font-size: 18px;
+}
+
+#myTable th, #myTable td {
+  text-align: left;
+  padding: 12px;
+}
+
+#myTable tr {
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+</style>
+
+
+
+	<div class="container">
+		<h1 align="center">Regiments </h1>
+		
+		<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for Regiment names.." title="Type in a name">
+
+		<table class="table table-bordered table-striped" id="myTable">
+  			<thead>
+  				  <tr style="background-color: blue; color: white;">
+					      <th>#</th>
+					      <th>Regiment</th>
+					      <th>Active From</th>
+					      <th>Regimental Center</th>
+					      <th>Motto</th>
+    			  </tr>
+ 		    </thead>
+  			<tbody>
+			    <tr>
+			      <th scope="row">1</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Rajputana_Rifles">Rajputana Rifles</a></td>
+			      <td>1775</td>
+			      <td>Delhi Cantonment</td>
+			      <td>"Veer bhogya vasundhara" ("the brave shall inherit the earth")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">2</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Rajput_Regiment">Rajput Regiment</a></td>
+			      <td>1778</td>
+			      <td>	Fatehgarh, Uttar Pradesh</td>
+			      <td>	"Sarvatra vijay" ("victory everywhere")	</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">3</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Madras_Regiment">Madras Regiment</a></td>
+			      <td>1758</td>
+			      <td>	Wellington, Tamil Nadu</td>
+			      <td>"Swadharme nidhanam shreyaha" ("it is a glory to die doing one’s duty")</td>
+			    </tr>
+
+
+			    <tr>
+			      <th scope="row">4</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Dogra_Regiment">Dogra Regiment</a></td>
+			      <td>1877</td>
+			      <td>Faizabad, Uttar Pradesh</td>
+			      <td>"Kartavyam anvatma" ("duty before death")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">5</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Rajputana_Rifles">Contimental Rifles</a></td>
+			      <td>1775</td>
+			      <td>Delhi Cantonment</td>
+			      <td>"Veer bhogya vasundhara" ("the brave shall inherit the earth")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">6</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Sikh_Regiment">Sikh Regiment</a></td>
+			      <td>1846</td>
+			      <td>	Ramgarh Cantonment, Jharkhand</td>
+			      <td>"Nischay kar apni jeet karon" ("with determination, I will be triumphant")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">7</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Jat_Regiment">Jat Regiment</a></td>
+			      <td>1795</td>
+			      <td>	Bareilly, Uttar Pradesh</td>
+			      <td>"Sangathan va veerta" ("unity and valour")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">8</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Parachute_Regiment_(India)">Parachute Regiment</a></td>
+			      <td>1945</td>
+			      <td>Bangalore, Karnataka</td>
+			      <td>"Shatrujeet" ("the conqueror")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">9</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Punjab_Regiment_(India)">Punjab Regiment	</a></td>
+			      <td>1761</td>
+			      <td>Ramgarh Cantonment, Jharkhand</td>
+			      <td>"Sthal wa jal" ("by land and sea")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">10</th>
+			      <td><a href="https://en.wikipedia.org/wiki/The_Grenadiers">The Grenadiers</a></td>
+			      <td>1758</td>
+			      <td>Jabalpur, Madhya Pradesh</td>
+			      <td>"Sarvada shaktishali ("always strong")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">11</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Sikh_Light_Infantry">Sikh Light Infantry</a></td>
+			      <td>	1944</td>
+			      <td>Fatehgarh, Uttar Pradesh</td>
+			      <td>"Deg teg fateh" ("prosperity in peace and victory in war")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">12</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Maratha_Light_Infantry">Maratha Light Infantry</a></td>
+			      <td>1768</td>
+			      <td>Belgaum, Karnataka</td>
+			      <td>	"Duty, honour, courage"</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">13</th>
+			      <td><a href="https://en.wikipedia.org/wiki/The_Garhwal_Rifles">The Garhwal Rifles</a></td>
+			      <td>1887</td>
+			      <td>Lansdowne, Uttarakhand</td>
+			      <td>"Yudhaya krit nischya" ("fight with determination")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">14</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Kumaon_Regiment">Kumaon Regiment</a></td>
+			      <td>	1813</td>
+			      <td>Ranikhet, Uttarakhand</td>
+			      <td>"Parakramo vijayate" ("valour triumphs")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">15</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Assam_Regiment">Assam Regiment</a></td>
+			      <td>1941</td>
+			      <td>Shillong, Meghalaya</td>
+			      <td>"Assam vikram" ("unique valour")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">16</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Bihar_Regiment">Bihar Regiment</a></td>
+			      <td>	1941</td>
+			      <td>Danapur, Bihar</td>
+			      <td>	"Karam hi dharam" ("work is worship")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">17</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Mahar_Regiment">Mahar Regiment</a></td>
+			      <td>1941</td>
+			      <td>	Saugor, Madhya Pradesh</td>
+			      <td>	"Yash sidhi" ("success and attainment")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">18</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Jammu_%26_Kashmir_Rifles">Jammu & Kashmir Rifles</a></td>
+			      <td>	1821</td>
+			      <td>Jabalpur, Madhya Pradesh</td>
+			      <td>"Prashata ranvirta" ("valour in battle is praiseworthy")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">19</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Jammu_and_Kashmir_Light_Infantry">Jammu and Kashmir Light Infantry</a></td>
+			      <td>1947</td>
+			      <td>Avantipur, Jammu and Kashmir</td>
+			      <td>"Balidanam vir lakshanam " ("sacrifice is a characteristic of the brave")</td>
+			    </tr>
+
+			   
+
+			    <tr>
+			      <th scope="row">20</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Naga_Regiment">Naga Regiment</a></td>
+			      <td>	1970</td>
+			      <td></td>
+			      <td></td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">21</th>
+			      <td><a href="https://en.wikipedia.org/wiki/1_Gorkha_Rifles">1 Gorkha Rifles</a></td>
+			      <td>	1815</td>
+			      <td>	Sabathu, Himachal Pradesh</td>
+			      <td>"Kayar hunu bhanda marnu ramro" ("better to die than live like a coward")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">22</th>
+			      <td><a href="https://en.wikipedia.org/wiki/3_Gorkha_Rifles">3 Gorkha Rifles</a></td>
+			      <td>1815</td>
+			      <td>Varanasi, Uttar Pradesh</td>
+			      <td>"Kayar hunu bhanda marnu ramro" ("better to die than live like a coward")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">23</th>
+			      <td><a href="https://en.wikipedia.org/wiki/4_Gorkha_Rifles">4 Gorkha Rifles</a></td>
+			      <td>1857</td>
+			      <td>Sabathu, Himachal Pradesh</td>
+			      <td>"Kayar hunu bhanda marnu ramro ("better to die than live like a coward")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">24</th>
+			      <td><a href="https://en.wikipedia.org/wiki/5_Gorkha_Rifles_(Frontier_Force)">5 Gorkha Rifles (Frontier Force)</a></td>
+			      <td>1858</td>
+			      <td>Shillong, Meghalaya</td>
+			      <td>"Shaurya evam nistha" ("courage and determination")</td>
+			    </tr>
+
+			 
+
+			    <tr>
+			      <th scope="row">25</th>
+			      <td><a href="https://en.wikipedia.org/wiki/8_Gorkha_Rifles">8 Gorkha Rifles</a></td>
+			      <td>	1824</td>
+			      <td>Shillong, Meghalaya</td>
+			      <td>"Kayar hunu bhanda marnu ramro ("better to die than live like a coward")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">26</th>
+			      <td><a href="https://en.wikipedia.org/wiki/9_Gorkha_Rifles">9 Gorkha Rifles</a></td>
+			      <td>1817</td>
+			      <td>Varanasi, Uttar Pradesh</td>
+			      <td>"Kayar hunu bhanda marnu ramro" ("better to die than live like a coward")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">27</th>
+			      <td><a href="https://en.wikipedia.org/wiki/11_Gorkha_Rifles">11 Gorkha Rifles</a></td>
+			      <td>1918-1922; from 1948</td>
+			      <td>Lucknow, Uttar Pradesh</td>
+			      <td>"Yatraham vijayastatra" ("the metaphor for victory")</td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">28</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Ladakh_Scouts">Ladakh Scouts</a></td>
+			      <td>1963</td>
+			      <td></td>
+			      <td></td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">29</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Arunachal_Scouts">Arunachal Scouts</a></td>
+			      <td>2010</td>
+			      <td></td>
+			      <td></td>
+			    </tr>
+
+			    <tr>
+			      <th scope="row">30</th>
+			      <td><a href="https://en.wikipedia.org/wiki/Sikkim_Scouts">Sikkim Scouts</a></td>
+			      <td>2013</td>
+			      <td></td>
+			      <td></td>
+			    </tr>
+
+			    
+			    
+			   
+
+			    
+  			  </tbody>
+		 </table>
+
+		
+	    </div>
+
+	    <br><br>
+<?php include('footer.php') ?>
+
+		
+
+
+<script>
+function myFunction() {
+  var input, filter, table, tr, td, i;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[0];
+    if (td) {
+      if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }       
+  }
+}
+</script>
+
